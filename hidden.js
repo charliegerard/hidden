@@ -1,6 +1,6 @@
 import 'https://cdnjs.cloudflare.com/ajax/libs/axe-core/3.1.2/axe.min.js';
 
-const hidden = (mode = "fullPage", maxNumErrors = 10) => {
+const hidden = (mode = "full", maxNumErrors = 10) => {
   if(!Number.isInteger(maxNumErrors)){
     throw new Error("The maximum number of errors tolerated must be an integer")
   }
@@ -10,10 +10,10 @@ const hidden = (mode = "fullPage", maxNumErrors = 10) => {
   }
 
   switch(mode){
-    case "elements":
+    case "partial":
       opacifyElements();
       break;
-    case "fullPage":
+    case "full":
       opacifyFullPage(maxNumErrors);
       break;
   }
