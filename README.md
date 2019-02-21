@@ -6,18 +6,16 @@ With the aim to sensitise people to improve the accessibility of their websites,
 
 ## How to use
 
-To add this to your project, simply add the following tag in the `<head>` of your HTML file.
-
-```html
-<script src="hidden.js" type="module"/>
-```
-
-Then, in your main `js` file, call:
+To add the script to your project, add the following line in your main `js` file:
 
 ```javascript
-import hidden from '../hidden.js';
+import hidden from 'https://raw.githubusercontent.com/charliegerard/hidden/master/hidden.js';
+```
 
-beAccessible() // in which you can pass a mode option and a threshold of errors
+Then, to start the script, write:
+
+```javascript
+hidden() // in which you can pass a mode option and a threshold of errors
 ```
 
 ## Options
@@ -27,4 +25,4 @@ The script takes 2 arguments:
 * A mode: `fullPage` or `elements`
 * A maximum number of errors tolerated.
 
-If you don't specify these parameters when calling `beAccessible`, the default values will be used ('fullPage' and 10).
+If you don't specify these parameters when calling `hidden`, the default values will be used ('fullPage' and 10).
