@@ -2,6 +2,24 @@
 
 With the aim to sensitise people to improve the accessibility of their websites, this script will make non-accessible elements invisible to everyone, until their accessiblity issues are fixed.
 
+## Demos
+
+I wrote a quick [Codepen](https://codepen.io/charliegerard/pen/PVvqQO?editors=1010) if you want to play around with the following demos.
+
+### **Full option**
+
+Decreases the opacity of the full page based on the total number of errors found.
+
+![Demo of full option](demos/hidden-full.gif)
+
+
+### **Partial option**
+
+Makes the inaccessible elements totally invisible to everyone.
+
+![Demo of partial option](demos/hidden-partial.gif)
+
+
 ## How does it work
 
 It uses the [axe-core](https://github.com/dequelabs/axe-core) accessibility engine to scan through the code and find accessibility issues.
@@ -44,5 +62,3 @@ The script takes 2 arguments:
 * A maximum number of errors tolerated.
 
 If you don't specify these parameters when calling `hidden`, the default values will be used ('full' and 10).
-
-
