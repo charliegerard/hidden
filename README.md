@@ -18,15 +18,19 @@ To add the script to your project, add the following line in your main `js` file
 import hidden from 'https://raw.githubusercontent.com/charliegerard/hidden/master/hidden.js';
 ```
 
-Then, to start the script, write:
+Then, to start the script, write either:
 
 ```javascript
-hidden() // in which you can pass a mode option and a threshold of errors
+hidden() // with no parameters if you want to use the default ones.
 ```
 
+or
+
 ```javascript
-hidden('full', 2); // the full mode take a parameter for the max number of errors accepted;
+hidden('full', 2); // the full mode takes a parameter for the max number of errors accepted;
 ```
+
+or
 
 ```javascript
 hidden('partial'); // partial does not need a max number of errors;
