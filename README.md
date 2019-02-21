@@ -15,7 +15,7 @@ Then, depending on the mode selected (`full` or `partial`), it either decreases 
 To add the script to your project, add the following line in your main `js` file:
 
 ```javascript
-import hidden from 'https://raw.githubusercontent.com/charliegerard/hidden/master/hidden.js';
+import hidden from 'https://cdn.jsdelivr.net/gh/charliegerard/hidden/hidden.js';
 ```
 
 Then, to start the script, write either:
