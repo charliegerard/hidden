@@ -62,3 +62,7 @@ The script takes 2 arguments:
 * A maximum number of errors tolerated.
 
 If you don't specify these parameters when calling `hidden`, the default values will be used ('full' and 10).
+
+---
+
+*Side note: I built this in a few hours so there's probably tons of ways it could be done better or differently!*
